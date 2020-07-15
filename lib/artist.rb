@@ -20,7 +20,9 @@ class Artist
   end
 
   def genres
-    songs.map {|song| song.genre}
+    songs.collect do |song|
+      song.genre
+    end
   end
 
   def new_song(name, genre)
