@@ -3,7 +3,7 @@ class Doctor
 
   @@all = []
 
-  def initialize(name, appointments)
+  def initialize(name)
     @name = name
     @appointments = appointments
     @@all << self
